@@ -105,7 +105,7 @@ def print_tree(margin, root, counter):
 
 def main(path):
     root_node = create_tree_rec(path, None)
-    print (path)
+    print(path)
     counter = Counter()
     print_tree("", root_node, counter)
     print("\n" + str(counter.n_directories) + " directories, " + str(counter.n_files) + " files")
