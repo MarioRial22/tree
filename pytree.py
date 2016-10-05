@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import os, sys
+import os
+import sys
 
 """""
 for dirpath, dirnames, filenames in os.walk('/home/mario'):
@@ -112,7 +113,7 @@ def main(path):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        path = "."
+        pathstr = "."
     else:
-        path = sys.argv[1]
-    main(path)
+        pathstr = sys.argv[1]
+    main(pathstr)
